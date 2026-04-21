@@ -1,0 +1,60 @@
+/* 
+ * css-skeleton-loaders
+ * Premium purely CSS skeleton loaders.
+ */
+
+:root {
+  --skeleton-base-color: #e2e8f0;
+  --skeleton-shine-color: #f8fafc;
+  --skeleton-animation-duration: 1.5s;
+}
+
+.skeleton {
+  background-color: var(--skeleton-base-color);
+  background-image: linear-gradient(
+    90deg,
+    var(--skeleton-base-color) 0px,
+    var(--skeleton-shine-color) 50%,
+    var(--skeleton-base-color) 100%
+  );
+  background-size: 200% 100%;
+  animation: skeletonShine var(--skeleton-animation-duration) infinite linear;
+  border-radius: 4px;
+}
+
+.skeleton-text {
+  height: 1rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.skeleton-text:last-child {
+  margin-bottom: 0;
+  width: 80%;
+}
+
+.skeleton-circle {
+  border-radius: 50%;
+}
+
+.skeleton-thumbnail {
+  width: 100%;
+  height: 200px;
+}
+
+@keyframes skeletonShine {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --skeleton-base-color: #1e293b;
+    --skeleton-shine-color: #334155;
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "css-skeleton-loaders",
+  "version": "1.0.0",
+  "description": "Premium animated skeleton loading states in vanilla CSS for React/Vue/Svelte apps.",
+  "main": "skeleton.css",
+  "keywords": [
+    "css",
+    "skeleton",
+    "loader",
+    "skeleton-screen",
+    "loading",
+    "ui"
+  ],
+  "author": "Ahmar Hussain",
+  "license": "MIT"
+}
